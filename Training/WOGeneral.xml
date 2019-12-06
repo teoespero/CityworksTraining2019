@@ -4,13 +4,13 @@
   
   <!-- Disable the map tile info -->
   <controls>
-      <control id="txtMapPage" visible="false"></control>
-      <control id="txtTileNo" visible="false"></control>
+      <!-- <control id="txtMapPage" visible="false"></control>
+      <control id="txtTileNo" visible="false"></control> -->
   </controls>
 
   <!-- Move the district field to the right -->
   <layout>
-      <panel id="Map">
+      <!-- <panel id="Map">
         <row index="4">
             <label id="label_cboDistrict"></label>
                 <controlContainer>
@@ -20,10 +20,10 @@
                     </linkedControls>
                 </controlContainer>
         </row>
-      </panel>
+      </panel> -->
 
       <!-- Create a button in thr general panel -->
-      <panel id="General">
+      <!-- <panel id="General">
         <row moveTo="2">
             <html cssClass="formButton" tag="button" onclick="alert('I am a new button')">
                   <text id="newButton">
@@ -31,11 +31,16 @@
                   </text>
             </html>
         </row>
-      </panel>
+      </panel> -->
+
+
+      <!-- Javascript -->
+      <script source="../XML/Training/WOGeneral.js">
+      </script>
   </layout>
 
 
-  
+
   <messages>
   </messages>
 </webLayout>
