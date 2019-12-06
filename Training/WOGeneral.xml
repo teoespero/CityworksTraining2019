@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<webLayout xmlns="http://www.azteca.com/cityworks/layout/webLayout">
+  <!-- USE THIS FILE AS A TEMPLATE TO OVERRIDE BASE XML FILES. VIEW MYCITYWORKS.COM OR CONTACT SUPPORT FOR MORE INFORMATION. -->
+  
+  <!-- Disable the map tile info -->
+  <controls>
+      <control id="txtMapPage" visible="false"></control>
+      <control id="txtTileNo" visible="false"></control>
+  </controls>
+
+  <!-- Move the district field to the right -->
+  <layout>
+      <panel id="Map">
+        <row index="4">
+            <label id="label_cboDistrict"></label>
+                <controlContainer>
+                    <linkedControls>
+                        <control id="cboDistrict">
+                        </control>
+                    </linkedControls>
+                </controlContainer>
+        </row>
+      </panel>
+
+      <!-- Create a button in thr general panel -->
+      <panel id="General">
+        <row moveTo="2">
+            <html cssClass="formButton" tag="button" onclick="alert('I am a new button')">
+                  <text id="newButton">
+                      New Button
+                  </text>
+            </html>
+        </row>
+      </panel>
+  </layout>
+
+
+  
+  <messages>
+  </messages>
+</webLayout>
